@@ -1,6 +1,8 @@
 import { use } from "react";
 import {useState} from "react";
 
+// Alteração de dados => useState()
+
 const UseStateComponent = () => {
     const [count, setCount] = useState(0)
 
