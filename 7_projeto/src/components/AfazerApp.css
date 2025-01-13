@@ -49,3 +49,23 @@
     background-color: green;
     color: white;
 }
+
+.listaAFazer {
+    list-style: none;
+    padding: 0;
+}
+
+.itemAFazer {
+    background-color: #fafafa;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.excluir {
+    background-color: #cf6679;
+    color: white;
+}

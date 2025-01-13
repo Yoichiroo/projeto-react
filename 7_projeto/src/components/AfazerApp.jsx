@@ -21,6 +21,10 @@ const AfazerApp = () => {
         }
     }
 
+    const excluirItem = (id) => {
+        setAFazeres((prevAFazeres) => prevAFazeres.filter(afazer => afazer.id !== id))
+    }
+
     return (
         <div className='container'>
             <h1 className='titulo'>Lista de Tarefas</h1>
@@ -32,11 +36,11 @@ const AfazerApp = () => {
             </form>
             {afazeres.length === 0 && <p className='vazio'>Não há tarefas.</p>}
 
-            <ul className="listaAFaze">
-                {AFazeres.map((afazer) => (
+            <ul className="listaAFazer">
+                {afazeres.map((afazer) => (
                     <li key={afazer.id} className='itemAFazer'>
                         {afazer.text}
-                        <button className="btn excluir">Excluir</button>
+                        <button className="btn excluir" onClick={() => excluirItem(afazer.id)}>Excluir</button>
                     </li>
                 ))}
             </ul>
