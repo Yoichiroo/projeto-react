@@ -1,9 +1,10 @@
-import './App.css'
+import AfazerApp from "./components/AfazerApp"
 
 function App() {
-
   return (
+    // lista de tarefas
     <>
+    <AfazerApp></AfazerApp>
     </>
   )
 }
