@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './AfazerApp.css'
 
-
 const AfazerApp = () => {
     const [afazeres, setAFazeres] = useState([])
 
